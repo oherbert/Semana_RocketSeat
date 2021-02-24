@@ -1,4 +1,4 @@
-import {Column, MigrationInterface, QueryRunner, Table} from "typeorm";
+import { MigrationInterface, QueryRunner, Table} from "typeorm";
 
 export class CreateUsers1614133091390 implements MigrationInterface {
 
@@ -20,9 +20,9 @@ export class CreateUsers1614133091390 implements MigrationInterface {
                     type: "varchar"
                 },
                 {
-                    name: "create_at",
+                    name: "created_at",
                     type: "timestamp",
-                    default: "now()"
+                    default: "now()",
                 }
                 ]
             })
